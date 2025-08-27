@@ -228,3 +228,18 @@ function start(){
     play_intervals();
   }
 }
+
+let columns_of_buttons = 2;
+
+window.addEventListener("resize", function(){
+  if (document.querySelector(".answer_container_item > button").clientHeight * 7 > document.querySelector(".answer_container").clientHeight && columns_of_buttons == 2){
+    document.querySelector(".answer_container").style.gridTemplateColumns = "repeat(4, 25vh)";
+    columns_of_buttons = 4;
+  }else if (200 < document.querySelector(".answer_container").clientHeight && columns_of_buttons == 4){
+    document.querySelector(".answer_container").style.gridTemplateColumns = "repeat(2, 25vh)";
+    columns_of_buttons = 2;
+  };
+});
+
+console.log(document.querySelector(".answer_container_item > button").clientHeight * 7);
+console.log(document.querySelector(".answer_container").clientHeight);

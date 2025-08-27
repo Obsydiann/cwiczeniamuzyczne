@@ -33,7 +33,7 @@ button {
     height: -moz-calc(100vh - (250px));
     height: -webkit-calc(100vh - (250px));
     height: calc(100vh - (250px));
-    grid-template-columns: repeat(2, calc((120 / 480) * 100vh));
+    grid-template-columns: repeat(2, 25vh);
 
     align-items: stretch;
     justify-items: stretch;
@@ -47,7 +47,7 @@ button {
 }
 
 .answer_container_item > button {
-    width: 75%;
+    width: 60%;
     align-self: stretch;
     justify-self: stretch;
     height: 100%;
