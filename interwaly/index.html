@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intervals</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Witam na stronie ćwieczeń interwałów</h1>
+        <header>
+            <div>
+                <button onclick="start()">start</button>
+                <button onclick="play_intervals()">posłuchaj jeszcze raz</button>
+            </div>
+            <output id="info" class="info">Kliknij <i>start</i>, aby zacząć</output>
+            <p></p>
+        </header>
+        
+
+        <div class="answer_container">
+
+            <div class="answer_container_item"> <input type="checkbox" id="0s"><button onclick="guess_interval(0)">pryma</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="1s" checked><button onclick="guess_interval(1)">sekunda mała</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="2s" checked><button onclick="guess_interval(2)">sekunda wielka</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="3s" checked><button onclick="guess_interval(3)">tercja mała</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="4s" checked><button onclick="guess_interval(4)">tercja wielka</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="5s" checked><button onclick="guess_interval(5)">kwarta</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="6s" checked><button onclick="guess_interval(6)">tryton</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="7s" checked><button onclick="guess_interval(7)">kwinta</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="8s" checked><button onclick="guess_interval(8)">seksta mała</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="9s" checked><button onclick="guess_interval(9)">seksta wielka</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="10s" checked><button onclick="guess_interval(10)">septyma mała</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="11s" checked><button onclick="guess_interval(11)">septyma wielka</button> </div>
+            <div class="answer_container_item"> <input type="checkbox" id="12s" checked><button onclick="guess_interval(12)">oktawa</button> </div>
+            
+        </div>
+
+        <div class="bottom_section">
+            <div>
+                0,1 <input type="range" id="between_time" min="0.4" max="2.5" step="0.1" value="1"> 2,5
+                <p>Czas pomiędzy dźwiękami: <output id="between_time_label"></output>s</p>
+            </div>
+            <div>
+                <wes style="font-size: large;">Kolejność: </wes><button id="goup"><img src="../icons/up-arrow.svg"></button> <button id="godown"><img src="../icons/down-arow.svg"></button> <button id="gorandom"><img src="../icons/shuffle.svg"></button>
+            </div>
+            <div>
+                <button id="mel">Melodycznie</button> <button id="har">Harmonicznie</button>
+            </div>
+        
+        </div>
+        
+
+        <script src="logic.js"></script>
+        <p></p>
+    </body>
+</html>

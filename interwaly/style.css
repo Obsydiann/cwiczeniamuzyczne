@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font: Arial;
+    align-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.info {
+    font-size: 20px;
+    justify-self: center;
+    margin-right: 175px;
+    justify-content: center;
+}
+
+button {
+    height: 40px;
+    border-radius: 10px;
+    font-size: 90%;
+}
+
+.answer_container {
+    margin: 25px;
+    display: grid;
+    gap: 10px;
+    height: -moz-calc(100vh - (250px));
+    height: -webkit-calc(100vh - (250px));
+    height: calc(100vh - (250px));
+    grid-template-columns: repeat(2, calc((120 / 480) * 100vh));
+
+    align-items: stretch;
+    justify-items: stretch;
+    justify-content: center;
+}
+
+.answer_container_item {
+    height: auto;
+    justify-self: stretch;
+    justify-content: stretch;
+}
+
+.answer_container_item > button {
+    width: 75%;
+    align-self: stretch;
+    justify-self: stretch;
+    height: 100%;
+    font-size: calc((100vh - (250px)) / 12 * 0.6);
+    background-color: #aeaeae;
+    transition: background-color 0.3s;
+}
+
+.answer_container_item:has(input:checked) > button {
+    background-color: #f0f0f0;
+}
+
+.answer_container_item:has(input:checked) > button:hover {
+    background-color: #e0e9ee;
+}
+
+.answer_container_item:has(input:checked) > button:active {
+    background-color: #d0e1ea;
+}
+
+.answer_container_item > input {
+    align-self: center;
+    justify-self: center;
+    height: 20px;
+    width: 20px;
+}
+
+
+.bottom_section {
+    position:fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    align-items: center;
+}
+
+
+.bottom_section > div > button {
+    transition: background-color 0.5s;
+}
+
+.bottom_section > div > button > img {
+    margin: 1px 0px 0px 1px;
+}
