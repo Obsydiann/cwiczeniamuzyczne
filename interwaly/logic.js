@@ -190,7 +190,7 @@ function generate_new_interval(){
   interval = avaliable_intervals[interval_idx];
 
   
-  start_sound = Math.floor(Math.random() * (24 + 24 - interval) - 24);
+  start_sound = Math.floor(Math.random() * (12 + 18 - interval) - 12);
 
 
   audios[0].playbackRate = 2 ** (start_sound / 12);
