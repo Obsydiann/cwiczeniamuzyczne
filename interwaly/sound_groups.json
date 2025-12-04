@@ -1,0 +1,15 @@
+{
+    "i0": {"sounds": [0, 0], "enabled": false},
+    "i1": {"sounds": [0, 1], "enabled": true},
+    "i2": {"sounds": [0, 2], "enabled": true},
+    "i3": {"sounds": [0, 3], "enabled": true},
+    "i4": {"sounds": [0, 4], "enabled": true},
+    "i5": {"sounds": [0, 5], "enabled": true},
+    "i6": {"sounds": [0, 6], "enabled": true},
+    "i7": {"sounds": [0, 7], "enabled": true},
+    "i8": {"sounds": [0, 8], "enabled": true},
+    "i9": {"sounds": [0, 8], "enabled": true},
+    "i10": {"sounds": [0, 10], "enabled": true},
+    "i11": {"sounds": [0, 11], "enabled": true},
+    "i12": {"sounds": [0, 12], "enabled": true}
+}
